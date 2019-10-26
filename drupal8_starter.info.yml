@@ -1,0 +1,17 @@
+name: Drupal 8 Starter Theme by Adworkshop
+description: A custom Drupal 8 theme developed by Adworkshop.
+type: theme
+core: 8.x
+
+libraries:
+  - drupal8_starter/custom-css
+  - drupal8_starter/custom-js
+
+# Define regions
+regions:
+  header: 'Header'
+  content: 'Main content'
+  footer: 'Footer'
+
+libraries-override:
+  core/modernizr: false

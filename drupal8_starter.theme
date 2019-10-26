@@ -1,0 +1,37 @@
+<?php
+/**
+ * @param $variables
+ */
+function drupal8_starter_preprocess_page(&$variables) {
+  if ($variables['is_front']) {
+    // front page special stuff
+  }
+}
+
+/**
+ * Implements theme_preprocess_image().
+ *
+ * @param $variables
+ */
+function drupal8_starter_preprocess_image(&$variables) {
+
+  // Example of setting up responsive picture elements
+  /*$sizes = array(
+        array('style' => 'height_400', 'width' => 1800, 'breakpoint' => 1400,),
+        array('style' => 'height_350', 'width' => 1400, 'breakpoint' => 1200,),
+        array('style' => 'height_300', 'width' => 1200, 'breakpoint' => 960,),
+        array('style' => 'height_250', 'width' => 960, 'breakpoint' => 600,),
+        array('style' => 'height_200', 'width' => 600, 'breakpoint' => 0,),
+      );
+   
+  if (count($sizes)) {
+    $variables['srcset'] = array();
+    foreach ($sizes as $size) {
+      $style = Drupal\image\Entity\ImageStyle::load($size['style']);
+      $src = $style->buildUrl($variables['uri']);
+      $variables['srcset'][] = array('src' => $src, 'width' => $size['width'], 'breakpoint' => $size['breakpoint']);
+    }
+    $variables['attributes']['src'] = $src;
+  }
+  */
+}
