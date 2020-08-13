@@ -2,8 +2,8 @@
 Website Name: Adirondack Health Capital Campaign Landing Page
 Description: A responsive website framework, agile and progressively enhanced
 Version: 1.0
-Author: Adworkshop
-Author URI: http://www.adworkshop.com
+Author: Ben Hamelin
+Author URI: https://github.com/ben-hamelin
 */
 
 /* ======================================================= */
@@ -667,7 +667,7 @@ Author URI: http://www.adworkshop.com
   appearance: none;
   }
   
-  /* Adworkshop Custom Form Styles/Additions */	
+  /* Custom Form Styles/Additions */
   .form-item label,
   .views-exposed-widget label { /* The label for a form element */
   display: block;	
