@@ -2,7 +2,7 @@
 /**
  * @param $variables
  */
-function drupal8_starter_preprocess_page(&$variables) {
+function drupal_starter_preprocess_page(&$variables) {
   if ($variables['is_front']) {
     // front page special stuff
   }
@@ -13,7 +13,7 @@ function drupal8_starter_preprocess_page(&$variables) {
  *
  * @param $variables
  */
-function drupal8_starter_preprocess_image(&$variables) {
+function drupal_starter_preprocess_image(&$variables) {
 
   // Example of setting up responsive picture elements
   /*$sizes = array(
