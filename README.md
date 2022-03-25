@@ -1,5 +1,5 @@
 # starter_theme
-A bare bones Drupal 8 starter theme
+A bare bones Drupal 9 starter theme
 
 Grab most recent drupal8_starter from 
 git@gitlab.com:ben-hamelin/starter_theme.git
