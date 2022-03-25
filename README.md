@@ -1,15 +1,12 @@
 # starter_theme
 A bare bones Drupal 9 starter theme
 
-Grab most recent drupal8_starter from 
-git@gitlab.com:ben-hamelin/starter_theme.git
-
 <ol>
-<li>Move drupal8_starter into your local site under /themes/custom/SITE_THEME_NAME
+<li>Move `starter_theme` into your local site under /themes/custom/SITE_THEME_NAME
 </li><li>
 Don’t bring along the .git folder or .gitignore file
 </li><li>
-Replace all filenames and code instances of “drupal8_starter” with the new theme name
+Replace all filenames and code instances of “starter_theme” with the new theme name
 </li><li>
 Visit /admin/appearance and find your new theme, click “Install and set as default”
 </li><li>
