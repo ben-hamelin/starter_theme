@@ -4,8 +4,8 @@ type: theme
 core_version_requirement: ^8 || ^9
 
 libraries:
-  - drupal_starter/custom-css
-  - drupal_starter/custom-js
+  - starter_theme/custom-css
+  - starter_theme/custom-js
 
 # Define regions
 regions:

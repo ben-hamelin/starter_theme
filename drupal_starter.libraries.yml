@@ -15,7 +15,7 @@ custom-js:
 
 # example of an external library include
 # to load it, the following would need to be in .info.yml under libraries:
-# - drupal_starter/googlefonts
+# - starter_theme/googlefonts
 # googlefonts:
 #  version: 1.0
 #  license:
