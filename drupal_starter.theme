@@ -9,29 +9,13 @@ function starter_theme_preprocess_page(&$variables) {
 }
 
 /**
- * Implements theme_preprocess_image().
+ * Implements theme_suggestions_page_alter().
  *
  * @param $variables
  */
-function starter_theme_preprocess_image(&$variables) {
-
-  // Example of setting up responsive picture elements
-  /*$sizes = array(
-        array('style' => 'height_400', 'width' => 1800, 'breakpoint' => 1400,),
-        array('style' => 'height_350', 'width' => 1400, 'breakpoint' => 1200,),
-        array('style' => 'height_300', 'width' => 1200, 'breakpoint' => 960,),
-        array('style' => 'height_250', 'width' => 960, 'breakpoint' => 600,),
-        array('style' => 'height_200', 'width' => 600, 'breakpoint' => 0,),
-      );
-   
-  if (count($sizes)) {
-    $variables['srcset'] = array();
-    foreach ($sizes as $size) {
-      $style = Drupal\image\Entity\ImageStyle::load($size['style']);
-      $src = $style->buildUrl($variables['uri']);
-      $variables['srcset'][] = array('src' => $src, 'width' => $size['width'], 'breakpoint' => $size['breakpoint']);
-    }
-    $variables['attributes']['src'] = $src;
+function starter_theme_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+  // Add content type suggestions.
+  if ($node = \Drupal::request()->attributes->get('node')) {
+    array_splice($suggestions, 1, 0, 'page__node__' . $node->getType());
   }
-  */
 }
