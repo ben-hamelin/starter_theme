@@ -4,7 +4,6 @@ custom-css:
     theme:
       css/custom/custom.css: {}
       css/custom/developer-overrides.css: {}
-      plugins/font-awesome-v.4.5.0/css/font-awesome.min.css: {}
 
 custom-js:
   version: 1.x
